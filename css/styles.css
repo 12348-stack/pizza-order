@@ -1,0 +1,11 @@
+top{
+  background-color: black;
+}
+body {
+  background-color:gray;
+}
+.img{
+  background-image:url(../Images/brown-pizza-on-plate-725993.jpg);
+  height: 80vh;
+  background-size: cover;
+}

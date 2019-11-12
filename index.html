@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PIZZA</title>
+    <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+  </head>
+  <body>
+    <section>
+  </body>
+  <div class="row">
+    <div class="container-fluid">
+      <div class="nav">
+        <nav class="navbar navbar-inverse navbar-fixed-top" id="nav">
+          <div class="container">
+            <a href="index.html">
+              <div class="navbar-text pull-left">
+                <h3>PIZZA TONIGHT</h3>
+              </div>
+            </a>
+            <div class="navbar-text pull-right"><a href="image/twitter.png"><i class="fa fa-twitter fa-4x"></i></a>
+            </div>
+            <div class="navbar-text pull-right"><a href="image/pinterest.png"><i class="fa fa-pinterest fa-4x"></i></a>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="top d-flex justify-content-center align-items-center flex-column">
+        <img src="">
+        <meta charset=" UTF-8">
+        <div class="jumbotron homm" id="landing-content">
+          <h1 class="page-header">PIZZA TONIGHT</h1>
+          <h2 id="landing-tagline">PIZZA TONIGHT,ENJOY YOUR NIGHT.</h2>
+          <div class="img">
+            hawaian
+            <!-- <img src="Images/brown-pizza-on-plate-725993.jpg"> -->
+          </div>
+          <div class="jumbotron" id="order-content">
+            <button type="btn" class="btn btn-primary" id="custom-pizza-btn">ORDER NOW</button><br>
+            <br>
+            <form class="form-group" id="custom-pizza">
+              <div class="row container">
+                <div class="col-xs-6">
+                  <p>TYPE</p>
+                </div>
+                <div class="col-xs-6" class="form-option">
+                  <select required class="form-control" id="type">
+                    <option>
+                    </option>
+                    <option value="chicken periperi">Chicken periperi</option>
+                    <option value="Bbq steak">Bbq steak</option>
+                    <option value="hawallian">Hawallian</option>
+                    <option value="chicken tikka">Chicken tikka</option>
+                    <option value="borewors">Borewors</option>
+                    <option value="vegetable">Vegetable</option>
+                    <option value="chicken mashroom">Chicken mashroom</option>
+                    <option value="plain cheese">Plain cheese</option>
+                  </select>
+                </div>
+                <div id="form-content">
+                  <h3 id="form-header">Custom Pizza Form</h3>
+                  <div class="row container">
+                    <div class="col-xs-6">
+                      <p>SIZE</p>
+                    </div>
+                    <div class="col-xs-6" class="form-option">
+                      <select required class="form-control" id="size">
+                        <option></option>.
+                        <option value="Small 10 in.">Small, 10"</option>
+                        <option value="Medium 14 in.">Medium, 14"</option>
+                        <option value="Large 18 in.">Large, 18"</option>
+                      </select>
+                    </div>
+                    <div class="row container">
+                      <div class="col-xs-6">
+                        <p>OPTION</p>
+                      </div>
+                      <div class="col-xs-6" class="form-option">
+                        <select required class="form-control" id="option">
+                          <option></option>
+                          <option value="spicy">spicy</option>
+                          <option value="non-spicy">non-spicy</option>
+                        </select>
+                      </div>
+                      <div class="row container">
+                        <div class="col-xs-6">
+                          <p>TOPPINGS</p>
+                        </div>
+                        <div class="col-xs-6" class="form-option">
+                          <select required class="form-control" id="toppings">
+                            <option></option>
+                            <option value="cheese">cheese</option>
+                            <option value="tomato">tomato</option>
+                            <option value="chicken">chicken</option>
+                            <option value="marinatted onions">marinatted onions</option>
+                          </select>
+                        </div>
+                        <div class="row container">
+                          <div class="col-xs-6">
+                            <p>NUMBER OF PIZZA</p>
+                          </div>
+                          <div class="col-xs-6" class="form-option">
+                            <select required class="form-control" id="number">
+                              <option></option>
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5</option>
+                            </select>
+                          </div>
+                          <div class="row container">
+                            <div class="col-xs-6">
+                              <p>DELIVERY OPTION</p>
+                            </div>
+                            <div class="col-xs-6" class="form-option">
+                              <select required class="form-control" id="delivery">
+                                <option></option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                              </select>
+                            </div>
+                            <button type="submit" class="btn btn-danger" id="submit-custom-pizza">PLACE ORDER</button>
+            </form>
+          </div>
+          <div class="col-xs-2" id="additions">
+            <h2>ADDITIONS</h2>
+            <button type="btn" class="btn btn-info side-option" id="soda">soda</button>
+            <button type="btn" class="btn btn-info side-option" id="veges">veges</button>
+            <button type="btn" class="btn btn-info side-option" id="mayonnaiss">mayonnaise</button>
+          </div>
+          <div class="col-xs-4" id="price-content">
+            <h1 class="page-header">Cart</h1>
+            <h2>Price: ksh <span id="final-cost"></span></h2>
+            <div id="order-details">
+              <p><a id="pizza-details-dropdown">Custom Pizza</a></p>
+              <ul id="pizza-details"></ul>
+              <p><a id="default-pizza-dropdown">Pizza</a></p>
+              <ul id="default-pizza-details"></ul>
+              <p><a id="sides-dropdown">Sides</a></p>
+              <ul id="sides-details"></ul>
+            </div>
+            <button type="btn" class="btn btn-danger" id="checkout-btn">Checkout</button>
+            <h3><span id="delivery-option"></span></h3>
+          </div>
+          <div class="nav">
+            <nav class="navbar navbar-inverse navbar-fixed-bottom" id="footer">
+              <div class="navbar-text pull-left">2019</div>
+          </div>
+        </div>
+        </section>
+      </div>
+      <div class="narrow col-12 text-center">
+      </div>
+      <div class="row text-center">
+        <div class="col-md-4">
+
+        </div>
+        <div class="col-md-4">
+
+        </div>
+        <div class="col-md-4">
+          <img src="">
+        </div>
+
+      </div>
+
+      <script src="js/jquery-3.4.1.min.js"></script>
+      <script src="js/script.js"></script>
+      <script src="js/jquerry.js"></script>
+      <script src="js/appboy.core.min.js"></script>
+      </body>
+
+</html>
